@@ -25,3 +25,16 @@ if( nivel >= 20 && (honor === 100 || vip)) {
 } else {
     console.log("Ingreso denegado");
 }
+
+/**Reto 3 */
+let vida = Number(prompt("Ingrese puntos de vida del jugador:"));
+let ataque = Number(prompt("Ingrese puntos de ataque de enemigo"));
+
+vida = vida - ataque;
+
+if (vida < 10){
+    console.log("¡Peligro crítico!");
+}else {
+    console.log("Sobreviviste");
+}
+
