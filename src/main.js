@@ -16,3 +16,12 @@ console.log("cuenta B:", ctaB);
 
 
 /**Reto 2 */
+let nivel = Number(prompt("Ingrese el nivel:"));
+let honor = Number(prompt("Ingrese los puntos de honor:"));
+let vip = prompt("¿Tiene vip? (si/no)") === "si";
+
+if( nivel >= 20 && (honor === 100 || vip)) {
+    console.log("Ingreso permitido");
+} else {
+    console.log("Ingreso denegado");
+}
